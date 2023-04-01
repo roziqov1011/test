@@ -1,0 +1,101 @@
+.contact {
+    margin-top: -1px;
+    padding-top: 124px;
+    padding-bottom: 120px;
+    background-color: $darkGreen;
+    background-image: url('../../img/contact-left.png'), url('../../img/contact-right.png');
+    background-repeat: no-repeat;
+    background-position: top 124px left, right bottom;
+}
+
+.contact__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact__info {
+    h2 {
+        font-weight: 700;
+        font-size: 64px;
+        color: #FFFFFF;
+    }
+
+    h4 {
+        font-weight: 700;
+        font-size: 32px;
+        color: #F67E7E;
+        margin-top: 16px;
+    }
+}
+
+.contact__list {
+    list-style-type: none;
+}
+
+.contact__item {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    max-width: 540px;
+
+    p {
+        font-weight: 700;
+        font-size: 18px;
+        color: #FFFFFF;
+
+    }
+}
+
+.contact__form {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    input {
+        padding: 16px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-bottom: 1px solid #fff;
+        display: flex;
+        flex-grow: 1;
+    }
+
+    textarea {
+        padding-top: 24px;
+        padding-left: 16px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+    }
+
+    button {
+        margin-top: 24px;
+        background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        border-radius: 24px;
+        width: 123px;
+        padding: 10px 32px;
+    }
+}
+@media (max-width:1300px) {
+    .contact__info{
+        h2,h4{
+            text-align: center;
+        }
+    }
+}
+@media (max-width:910px) {
+    .contact__inner{
+        justify-content: space-around;
+    }
+}
+@media (max-width:540px) {
+    .contact{
+        background-image:  url('../../img/contact-right.png');
+        background-position: right bottom -130px;
+    }
+}
